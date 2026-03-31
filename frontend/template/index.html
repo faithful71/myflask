@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Flask Toolkit</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#features" class="nav-link">Features</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">{{ message }}</h1>
+            <p class="hero-subtitle">Your journey into web development starts here</p>
+            <button class="btn btn-primary">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h2 class="section-title">Welcome to Flask!</h2>
+            <p class="section-description">This is your first Flask application. You're building a modern web application using Python's most popular web framework.</p>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section">
+            <h2 class="section-title">What You've Learned</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3>Setting up Flask</h3>
+                    <p>Initialize and configure your Flask application</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛣️</div>
+                    <h3>Creating Routes</h3>
+                    <p>Map URLs to Python functions</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📄</div>
+                    <h3>Rendering Templates</h3>
+                    <p>Separate HTML from your Python logic</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Using Static Files</h3>
+                    <p>Serve CSS, images, and JavaScript</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Next Steps Section -->
+        <section class="next-steps">
+            <h2 class="section-title">What's Next?</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Explore More Routes</h3>
+                    <p>Add more pages and functionality to your app</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Style Your App</h3>
+                    <p>Customize colors, fonts, and layouts</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Add Interactivity</h3>
+                    <p>Use forms and databases</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Flask Beginner's Toolkit. Made with ❤️ by FAITH AHEBWA</p>
+    </footer>
+</body>
+</html>
