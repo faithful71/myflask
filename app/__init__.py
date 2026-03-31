@@ -18,4 +18,12 @@ def create_app():
             year=datetime.now().year
         )
 
+    @app.route('/about')
+    def about():
+        return render_template(
+            'about.html',
+            title="About - Flask Toolkit",
+            year=datetime.now().year
+        )
+
     return app

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS Path -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Flask Toolkit</div>
+        <ul class="nav-links">
+            <li><a href="{{ url_for('home') }}" class="nav-link">Home</a></li>
+            <li><a href="{{ url_for('about') }}" class="nav-link active">About</a></li>
+            <li><a href="#features" class="nav-link">Features</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">About Flask Toolkit</h1>
+            <p class="hero-subtitle">Learn more about this powerful web development framework</p>
+            <a href="#mission" class="btn btn-primary">Our Mission</a>
+        </div>
+    </section>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Mission Section -->
+        <section id="mission" class="about-section">
+            <h2 class="section-title">Our Mission</h2>
+            <p class="section-description">
+                Flask Toolkit is designed to help developers quickly build and deploy web applications using Python's Flask framework.
+                Whether you're a beginner learning web development or an experienced developer building production applications,
+                Flask Toolkit provides the tools and structure you need to succeed.
+            </p>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section">
+            <h2 class="section-title">Why Choose Flask?</h2>
+
+            <div class="features-grid">
+
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Lightweight</h3>
+                    <p>Minimal core framework that doesn't force unnecessary dependencies</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3>Flexible</h3>
+                    <p>Choose the components you need, when you need them</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🐍</div>
+                    <h3>Pythonic</h3>
+                    <p>Built for Python developers, following Python conventions</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Well-Documented</h3>
+                    <p>Comprehensive documentation and large community support</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Technologies Section -->
+        <section class="about-section">
+            <h2 class="section-title">Technologies Used</h2>
+            <div class="tech-stack">
+                <div class="tech-item">
+                    <h4>Backend</h4>
+                    <ul>
+                        <li>Flask (Python Web Framework)</li>
+                        <li>Jinja2 (Template Engine)</li>
+                        <li>Werkzeug (WSGI Utility)</li>
+                    </ul>
+                </div>
+                <div class="tech-item">
+                    <h4>Frontend</h4>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Google Fonts</li>
+                    </ul>
+                </div>
+                <div class="tech-item">
+                    <h4>Deployment</h4>
+                    <ul>
+                        <li>Gunicorn (WSGI Server)</li>
+                        <li>Procfile (Heroku Deployment)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; {{ year }} Flask Toolkit. Made with ❤️</p>
+    </footer>
+
+</body>
+</html>
