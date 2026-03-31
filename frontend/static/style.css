@@ -435,3 +435,23 @@ body {
         padding: 2rem 1rem;
     }
 }
+
+/* ============================================
+   Footer
+   ============================================ */
+
+.footer {
+    background: #0f1419;
+    color: var(--text-secondary);
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    border-top: 1px solid var(--border-color);
+    position: relative;
+    bottom: 0;
+    font-size: 0.95rem;
+}
+
+.footer p {
+    margin: 0;
+}
